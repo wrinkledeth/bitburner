@@ -1,6 +1,6 @@
 /** @param {import(".").NS} ns **/
 export async function main(ns) {
-    const sym = ns.args[0]; //FLCM, WDS
+    const sym = ns.args[0]; //FLCM, WDS, test
     const maxShares = ns.stock.getMaxShares(sym);
     let holding = false;
     let shares;
