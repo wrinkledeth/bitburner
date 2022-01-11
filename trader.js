@@ -8,7 +8,7 @@ export async function main(ns) {
     while (true) {
         await ns.sleep(6000);
         let forecast = ns.stock.getForecast(sym);
-        //ns.tprint(forecast);
+        //ns.tprint(forecast); t
         if (forecast > .6 & !holding) {
             ns.tprint('------------------');
             ns.tprint(`Forecast % = ${forecast}`)
