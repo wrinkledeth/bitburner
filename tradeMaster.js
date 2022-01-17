@@ -6,10 +6,10 @@ export async function main(ns) {
     for (let sym of symbols){
         let price = ns.stock.getPrice(sym);
         let maxShares = ns.stock.getMaxShares(sym);
-        let product = price * maxShares;
+        let product = price * maxShares; // marketcap
         symlist.push({'sym': sym, 'max': product});
     };
-    symlist.sort((b,a)=> (a.max - b.max));
+    symlist.sort((b,a)=> (a.max - b.max)); //sort by descending marketcap
     for (let sym of symlist){
         let symbol = sym['sym']
         ns.exec('trader.js', host, 1, symbol)
