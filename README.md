@@ -1,2 +1,2 @@
 # bitburner
-Personal BitBurner Repo Containing JS Automation
+Personal BitBurner Automation Repo

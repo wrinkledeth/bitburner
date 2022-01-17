@@ -10,8 +10,6 @@ export async function main(ns) {
         let currentMoney = ns.getServerMoneyAvailable(target);
         if ((maxMoney > 1500000000) & (currentMoney === maxMoney)){
             ns.exec('batchHack.js',ns.getHostname(),1,target);  
-            // ns.tprint(target);
-            // ns.tprint(maxMoney);
         }
     }
 }
@@ -95,42 +93,3 @@ function recursiveScan(targets, ns) {
     }
     return targets;
 }
-
-// /** @param {import(".").NS} ns **/
-// function rootBox(target, ns) {
-//     ns.brutessh(target);
-//     ns.ftpcrack(target);
-//     ns.httpworm(target);
-//     ns.relaysmtp(target);
-//     ns.sqlinject(target);
-//     ns.nuke(target);
-//     //ns.installBackdoor();
-// }
-
-
-
-
-// Recursively Find all hosts
-// Create a dictionary name, status,  
-
-// const { server, maxMoney, securityLevel, minSecurityLevel, moneyAvailable } = serverData;x
-
-//   run basic.js omega-net -t 420
-
-//always use const (cant change)
-//if you need to change it, use let 
-
-
-//let and var both let you change it, var expands the scope outside of current context. Let keeps it within. 
-
-
-
-        // rootBox(host,ns);
-
-        // const lit_files = ns.ls(host,'.lit');
-        // for (let lit of lit_files){
-        //     await ns.scp(lit_files,host,'server1');
-        // }
-
-        // generate object with all server attributes.
-        // upload weaken and grow scripts, run them.

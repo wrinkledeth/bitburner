@@ -56,22 +56,6 @@ export async function main(ns) {
             await ns.sleep(weakenTime);
             batchCount = 0
         }
-        // ns.tprint(batchCount)
     }
 }
 
-
-// ns.tprint('---------------');
-// ns.tprint(`hackThreads: ${hackThreads}`);
-// ns.tprint(`repairHackThreads: ${repairHackThreads}`);
-// ns.tprint(`growthThreads: ${growthThreads}`);
-// ns.tprint(`repairGrowthThreads: ${repairGrowthThreads}`);
-
-//calculate grow %
-//calculate grow threads for 100%
-//calculate hack %
-//calculate hack threads for 100%
-
-
-    // const serverMaxRam = ns.getServerMaxRam(target);
-    // const serverUsedRam = ns.getServerUsedRam(target);
