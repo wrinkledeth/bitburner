@@ -1,2 +1,2 @@
-# bitburner
-Personal BitBurner Automation Repo
+# Bitburner Automation
+Personal Automation Repo for Bitburner game :)
